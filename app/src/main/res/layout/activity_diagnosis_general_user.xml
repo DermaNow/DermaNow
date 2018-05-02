@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ala.dermanow.Diagnosis_general_user">
+
+
+    <TextView
+        android:id="@+id/generalDiagnosis_diseaseName_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="serif"
+        android:text="Name"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/generalDiagnosis_diseaseDescreption_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/frameLayout2"
+        android:layout_below="@+id/generalDiagnosis_diseaseName_text"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Description:"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/generalDiagnosis_diseaseSymptoms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/generalDiagnosis_diseaseDescreption_text"
+        android:layout_below="@+id/generalDiagnosis_diseaseDescreption_text"
+        android:layout_marginTop="124dp"
+        android:fontFamily="serif"
+        android:text="Symptoms:"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/generalDiagnosis_diseasePrecaution_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/general_symptoms_fulltext"
+        android:layout_marginTop="72dp"
+        android:layout_toEndOf="@+id/general_symptoms_fulltext"
+        android:fontFamily="serif"
+        android:text="Precaution:"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="370dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/red_border">
+
+        <ImageView
+            android:id="@+id/warning_icon"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/frameLayout2"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_alignTop="@+id/frameLayout2"
+            android:layout_marginStart="12dp"
+            app:srcCompat="@drawable/ic_action_warning" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/generalDiagnosis_warning_text"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/frameLayout2"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/generalDiagnosis_diseaseSymptoms_text"
+        android:fontFamily="serif"
+        android:text="You have to visit a doctor as soon as possible"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/generalDiagnosis_signup_warning"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/frameLayout2"
+        android:layout_alignStart="@+id/generalDiagnosis_warning_text"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="serif"
+        android:text="To find an appointment and get all the features of the Application just Sign up "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkBlue"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/general_descreption_fulltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/generalDiagnosis_diseaseDescreption_text"
+        android:layout_below="@+id/generalDiagnosis_diseaseDescreption_text"
+        android:layout_marginTop="9dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/general_symptoms_fulltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/generalDiagnosis_diseaseSymptoms_text"
+        android:layout_below="@+id/generalDiagnosis_diseaseSymptoms_text"
+        android:layout_marginTop="11dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/general_precaution_fulltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/generalDiagnosis_diseasePrecaution_text"
+        android:layout_alignTop="@+id/generalDiagnosis_diseasePrecaution_text"
+        android:layout_marginTop="40dp"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

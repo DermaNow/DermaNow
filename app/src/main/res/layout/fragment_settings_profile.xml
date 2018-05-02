@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper"
+    tools:context="com.example.ala.dermanow.settings_profile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/settings_profile_pic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:layout_above="@+id/editText_user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pic"
+            app:civ_border_color="#FFFFFFFF"
+            app:civ_border_width="3dp" />
+
+        <EditText
+            android:id="@+id/editText_user_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText_user_email"
+            android:layout_alignStart="@+id/editText_user_email"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_action_fullname"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Full name"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_user_email"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText_user_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText_user_phone"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/confirm_button"
+            android:layout_alignStart="@+id/editText_user_email"
+            android:layout_marginBottom="55dp"
+            android:drawableLeft="@drawable/ic_action_phone"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:text="Confirm Update"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

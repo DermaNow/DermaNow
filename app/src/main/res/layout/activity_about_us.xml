@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ala.dermanow.about_us">
+
+
+    <ImageView
+        android:id="@+id/aboutUs_logo"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/walaalogoapplication" />
+
+    <TextView
+        android:id="@+id/aboutUs_Descreption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/aboutUs_email_Icon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="serif"
+        android:text="This application was developed by IT senior students of King Abdulaziz Univertsity to help you."
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/aboutUs_email_Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/aboutUs_contactText"
+        android:layout_toStartOf="@+id/aboutUs_contactText"
+        app:srcCompat="@drawable/ic_action_email_balck" />
+
+    <TextView
+        android:id="@+id/aboutUs_contactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/aboutUs_Dermanow_Email"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Contact us:"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/aboutUs_Dermanow_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="monospace"
+        android:text="Dermanowteam@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/colorEndBlue"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

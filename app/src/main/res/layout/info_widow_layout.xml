@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info_name"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:fontFamily="serif"
+                android:gravity="left|center_horizontal|center_vertical"
+                android:paddingLeft="20sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_city"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:fontFamily="serif"
+
+                android:paddingLeft="20sp"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+        <TextView
+            android:id="@+id/info_address"
+            android:layout_width="81dp"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:gravity="left"
+            android:paddingLeft="20sp"
+            android:text="Address:"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info_address_text"
+            android:layout_width="211dp"
+            android:layout_height="32dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="serif"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/sunOpenTv"
+            android:layout_width="287dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:fontFamily="serif"
+            android:text="Click on the window to reserve an appointment"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

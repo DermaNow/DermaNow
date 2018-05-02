@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ala.dermanow.search">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#e6f2ff"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchView"
+        android:layout_marginTop="11dp"
+        android:gravity="fill"
+        android:orientation="horizontal"
+        android:scaleX="0.88"
+        android:scaleY="0.88">
+
+
+        <RadioButton
+            android:id="@+id/radioButton_search_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/searchView"
+            android:checked="true"
+            android:fontFamily="serif"
+            android:text="Doctor"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_search_clinic"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchView"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/radioButton_search_doctorr"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="Clinic"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_search_rate"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchView"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/radioButton_search_clinic"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="Rate"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_search_district"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchView"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/radioButton_search_rate"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="District"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="#e6f2ff">
+
+        <LinearLayout
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+    </ScrollView>
+</RelativeLayout>

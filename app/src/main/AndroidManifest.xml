@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xlmns="http://schemas.android.com/apk/res-auto"
+    package="com.example.ala.dermanow">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/walaanewlogonowrd"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/walaanewlogonowrd"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Signin"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecretaryHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".skinDiagnosis"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+                <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Diagnosis_patient"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splashscreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".doctorHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".patientHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".appointment"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+             alaa key = AIzaSyDYUzYJFVeNe9ROKJZ2lvKDvzzPrBqMhYw
+             walaa key =AIzaSyDYUzYJFVeNe9ROKJZ2lvKDvzzPrBqMhYw
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDYUzYJFVeNe9ROKJZ2lvKDvzzPrBqMhYw" />
+
+        <activity
+            android:name=".findClinic"
+            android:label="@string/title_activity_find_clinic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Diagnosis_doctor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about_us"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manage_appointments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings"
+            android:label="Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".patient_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".findNearestClinic"
+            android:screenOrientation="portrait" />
+        <activity android:name=".attachment" />
+        <activity android:name=".secretary_signup" />
+        <activity
+            android:name=".doctor_signup_info1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".doctor_signup_info2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".doctor_signup_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Schedule_Management"
+            android:label="Manage Schedule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_unverified_doctors"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listview_item"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_verified_doctors"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".admin_home"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Diagnosis_general_user"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dr_home_secretary_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".change_appointment_date_time"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".secretary_manage_appointments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".patient_view_appointments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".patient_change_appointment_date_time"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notebookpaper"
+    tools:context="com.example.ala.dermanow.appointment">
+
+    <TextView
+        android:id="@+id/appointment_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="serif"
+        android:text="Appointment Date:"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appointment_doctor_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText_app_date"
+        android:layout_below="@+id/editText_app_date"
+        android:layout_marginTop="23dp"
+        android:fontFamily="serif"
+        android:text="Doctor:"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/appointment_doctor_spinner"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/appointment_doctor_text"
+        android:layout_below="@+id/appointment_doctor_text" />
+
+    <RatingBar
+        android:id="@+id/appointment_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/appointment_doctor_text"
+        android:layout_centerInParent="false"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/appointment_doctor_text"
+        android:numStars="5"
+        android:saveEnabled="false"
+        android:scaleX="0.5"
+        android:scaleY="0.5" />
+
+    <TextView
+        android:id="@+id/appointment_availableTime_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/appointment_doctor_spinner"
+        android:layout_below="@+id/appointment_ratingBar"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Available Time: "
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textVeiw_availableTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/appointmernt_confirm_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollVeiw_time"
+        android:layout_width="250dp"
+        android:layout_height="280dp"
+        android:layout_alignStart="@+id/appointment_availableTime_text"
+        android:layout_below="@+id/appointment_availableTime_text"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/applegaramond"
+        android:text="Available Time: ">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/appointmernt_confirm_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif"
+        android:text="Reserve"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_app_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/appointment_date_text"
+        android:layout_below="@+id/appointment_date_text"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_action_calender_gray"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="serif"
+        android:hint="Click here"
+        android:inputType="date"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/appointment_availableTime_text"
+        android:layout_alignEnd="@+id/scrollVeiw_time"
+        android:layout_toEndOf="@+id/appointment_doctor_spinner" />
+
+</RelativeLayout>

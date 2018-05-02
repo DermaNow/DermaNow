@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ala.dermanow.listview_item">
+
+    <TextView
+        android:id="@+id/listitem_name"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:fontFamily="serif"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <TextView
+        android:id="@+id/listitem_ssn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/listitem_name"
+        android:layout_alignStart="@+id/listitem_name"
+        android:layout_below="@+id/listitem_name"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listitem_clinic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/listitem_ssn"
+        android:layout_alignStart="@+id/listitem_ssn"
+        android:layout_below="@+id/listitem_ssn"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listitem_major"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/listitem_clinic"
+        android:layout_below="@+id/listitem_clinic"
+        android:layout_marginTop="17dp"
+        android:fontFamily="serif"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listitem_degree"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/listitem_major"
+        android:layout_below="@+id/listitem_major"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listitem_phone"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/listitem_degree"
+        android:layout_below="@+id/listitem_degree"
+        android:layout_marginTop="19dp"
+        android:fontFamily="serif"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listitem_email"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/listitem_phone"
+        android:layout_below="@+id/listitem_phone"
+        android:layout_marginTop="11dp"
+        android:fontFamily="serif"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listitem_clinic_license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/listitem_email"
+        android:layout_below="@+id/listitem_email"
+        android:layout_marginTop="13dp"
+        android:fontFamily="serif"
+        android:text="Clinic License:"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listitem_job_license"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/listitem_clinic_license"
+        android:layout_below="@+id/listitem_clinic_license"
+        android:layout_marginTop="15dp"
+        android:fontFamily="serif"
+        android:text="Job License:"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/clinic_license_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listitem_clinic_license"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/listitem_clinic_license"
+        android:fontFamily="serif"
+        android:text="Click here"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="19dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/job_license_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/clinic_license_view"
+        android:layout_alignTop="@+id/listitem_job_license"
+        android:fontFamily="serif"
+        android:text="Click here"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="19dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/admin_rejectbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="31dp"
+        android:layout_toStartOf="@+id/job_license_view"
+        android:background="@android:color/holo_red_light"
+        android:fontFamily="@font/applegaramond"
+        android:text="reject"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/admin_acceptbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/admin_deleteaccount_btn"
+        android:layout_alignBottom="@+id/admin_deleteaccount_btn"
+        android:layout_toEndOf="@+id/job_license_view"
+        android:background="#32CD32"
+        android:fontFamily="@font/applegaramond"
+        android:text="accept"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/admin_deleteaccount_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/admin_rejectbtn"
+        android:layout_alignBottom="@+id/admin_rejectbtn"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Delete doctor account"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>

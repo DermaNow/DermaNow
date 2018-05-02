@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ala.dermanow.profile">
+
+    <ImageView
+        android:id="@+id/header_cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#c0e8fc"
+        android:scaleType="centerCrop"></ImageView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/profile_pic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_below="@+id/header_cover_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-130dp"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_pic"
+        app:civ_border_color="#FFFFFFFF"
+        app:civ_border_width="3dp" />
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_cover_image"
+        android:background="#cccccc"
+        android:elevation="4dp"
+        android:paddingBottom="24dp">
+
+
+        <TextView
+            android:id="@+id/profile_username_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:fontFamily="serif"
+            android:text="Username"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/profile_settings_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/profile_pic"
+        android:layout_marginEnd="12dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_action_settings" />
+
+    <TextView
+        android:id="@+id/usertype_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:fontFamily="serif"
+        android:text="Usertype"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profile_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usertype_text"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="40dp"
+        android:layout_toStartOf="@+id/profile_pic"
+        android:fontFamily="serif"
+        android:text="Name:"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/profile_name_text"
+        android:layout_alignBottom="@+id/profile_name_text"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/profile_name_text"
+        android:fontFamily="serif"
+        android:text="User Full Name"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextView_profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/profile_email_text"
+        android:layout_alignBottom="@+id/profile_email_text"
+        android:layout_alignStart="@+id/TextView_profile_name"
+        android:fontFamily="serif"
+        android:text="User Email"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextView_profile_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/profile_phone_text"
+        android:layout_alignBottom="@+id/profile_phone_text"
+        android:layout_alignStart="@+id/TextView_profile_email"
+        android:fontFamily="serif"
+        android:text="User Phone Number"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/profile_email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/profile_name_text"
+        android:layout_below="@+id/profile_name_text"
+        android:layout_marginTop="33dp"
+        android:fontFamily="serif"
+        android:text="Email:"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profile_phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/profile_email_text"
+        android:layout_below="@+id/profile_email_text"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:text="Phone:"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ala.dermanow.settings_general">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <Button
+            android:id="@+id/Button_aboutUs"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Button_general_sittings"
+            android:layout_below="@+id/Button_general_sittings"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/layout_border"
+            android:drawableRight="@drawable/ic_action_arrow"
+            android:fontFamily="serif"
+            android:text="  About us"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Button_general_sittings"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"
+            android:background="@drawable/layout_border"
+            android:drawableRight="@drawable/ic_action_arrow"
+            android:fontFamily="serif"
+            android:text="  Application General Information"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/signout_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="serif"
+            android:text="Sign out"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>

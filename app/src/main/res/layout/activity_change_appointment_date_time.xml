@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notebookpaper"
+    tools:context="com.example.ala.dermanow.change_appointment_date_time">
+
+
+    <TextView
+        android:id="@+id/patient_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/scrollVeiw_timeChange"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="serif"
+        android:text="Patient Name :"
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/patient_name_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/patient_name_text"
+        android:layout_below="@+id/patient_name_text"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="serif"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appointment_TimeChange_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/patient_name_editText"
+        android:layout_below="@+id/patient_name_editText"
+        android:layout_marginTop="25dp"
+        android:fontFamily="serif"
+        android:text="Appointment Date: "
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/appointment_dateChange_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/appointment_TimeChange_text"
+        android:layout_below="@+id/appointment_TimeChange_text"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_action_calender_gray"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="serif"
+        android:hint="Click here"
+        android:inputType="date"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/appointment_availableTimeChange_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/appointment_dateChange_editText"
+        android:layout_below="@+id/appointment_dateChange_editText"
+        android:layout_marginTop="25dp"
+        android:fontFamily="serif"
+        android:text="Available Time: "
+        android:textAlignment="center"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollVeiw_timeChange"
+        android:layout_width="250dp"
+        android:layout_height="280dp"
+        android:layout_alignEnd="@+id/appointment_saveChanges_button"
+        android:layout_below="@+id/appointment_availableTimeChange_text"
+        android:layout_marginTop="14dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_change_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/appointment_saveChanges_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="save changes"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textVeiw_change_availableTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/appointment_saveChanges_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp" />
+
+</RelativeLayout>

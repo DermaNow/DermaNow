@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ala.dermanow.Diagnosis_patient">
+
+
+    <TextView
+        android:id="@+id/patientDiagnosis_diseaseName_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="serif"
+        android:text="Name"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/patientDiagnosis_diseaseDescreption_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/frameLayout2"
+        android:layout_below="@+id/patientDiagnosis_diseaseName_text"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Description:"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/patientDiagnosis_diseaseSymptoms_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/patientDiagnosis_diseaseDescreption_text"
+        android:layout_marginTop="198dp"
+        android:fontFamily="serif"
+        android:text="Symptoms:"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/patientDiagnosis_diseasePrecaution_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/patient_precaution_fulltext"
+        android:layout_alignStart="@+id/patientDiagnosis_diseaseDescreption_text"
+        android:fontFamily="serif"
+        android:text="Precaution:"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/red_border">
+
+        <ImageView
+            android:id="@+id/warning_icon"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/frameLayout2"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_alignTop="@+id/frameLayout2"
+            android:layout_marginStart="12dp"
+            app:srcCompat="@drawable/ic_action_warning" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/patientDiagnosis_warning_text"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/patientDiagnosis_clinic_search_button"
+        android:layout_alignTop="@+id/frameLayout2"
+        android:fontFamily="serif"
+        android:text="You have to visit a doctor as soon as possible"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/patientDiagnosis_clinic_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/patientDiagnosis_warning_text"
+        android:layout_toEndOf="@+id/patientDiagnosis_diseaseSymptoms_text"
+        android:fontFamily="serif"
+        android:text="search for a clinic"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/patient_Descreption_fulltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/patientDiagnosis_diseaseDescreption_text"
+        android:layout_below="@+id/patientDiagnosis_diseaseDescreption_text"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/patient_symptoms_fulltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/patientDiagnosis_diseaseSymptoms_text"
+        android:layout_below="@+id/patientDiagnosis_diseaseSymptoms_text"
+        android:layout_marginTop="14dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/patient_precaution_fulltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/patientDiagnosis_diseaseDescreption_text"
+        android:layout_marginBottom="153dp"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
