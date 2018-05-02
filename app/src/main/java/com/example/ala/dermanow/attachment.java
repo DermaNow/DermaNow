@@ -35,6 +35,7 @@ import java.util.UUID;
 
 public class attachment extends AppCompatActivity implements View.OnClickListener {
 
+//attachment class
 
     //storage permission code
     private static final int STORAGE_PERMISSION_CODE = 123;
