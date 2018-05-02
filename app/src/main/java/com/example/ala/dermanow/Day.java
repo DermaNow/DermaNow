@@ -49,6 +49,7 @@ import dagger.android.support.AndroidSupportInjection;
 
 public class Day extends Fragment implements View.OnClickListener {
 
+    //Day shift
     final String shift = "day";
     LinearLayout linearLayout;
     Button confirm;

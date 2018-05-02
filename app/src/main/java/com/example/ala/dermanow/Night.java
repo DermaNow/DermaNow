@@ -47,6 +47,7 @@ import java.util.TimerTask;
 
 public class Night extends Fragment implements View.OnClickListener {
 
+    //night shift
     final String shift = "night";
     LinearLayout linearLayout;
     Button confirm;
