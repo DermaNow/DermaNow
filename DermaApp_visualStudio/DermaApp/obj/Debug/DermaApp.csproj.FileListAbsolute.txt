@@ -1,0 +1,11 @@
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\bin\Debug\DermaApp.exe.config
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\bin\Debug\DermaApp.exe
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\bin\Debug\DermaApp.pdb
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\bin\Debug\MySql.Data.dll
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\bin\Debug\MySql.Data.xml
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\obj\Debug\DermaApp.csprojResolveAssemblyReference.cache
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\obj\Debug\Interop.MLApp.dll
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\obj\Debug\DermaApp.csproj.ResolveComReference.cache
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\obj\Debug\DermaApp.csproj.CoreCompileInputs.cache
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\obj\Debug\DermaApp.exe
+C:\Users\Rahaf\source\repos\DermaApp\DermaApp\obj\Debug\DermaApp.pdb
